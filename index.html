@@ -140,6 +140,38 @@
   }
   .contact a { color: var(--navy); text-decoration: none; }
 
+  .partners-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .partner-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e8ec;
+    border-radius: 10px;
+    padding: 16px 24px;
+    min-width: 160px;
+    height: 90px;
+  }
+  .partner-badge img {
+    max-height: 48px;
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.75;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+  }
+  .partner-badge:hover img {
+    filter: none;
+    opacity: 1;
+  }
+
   footer {
     text-align: center;
     padding: 24px;
@@ -167,6 +199,7 @@
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About</a>
+      <a href="#partners">Partners</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -202,10 +235,29 @@
       actually protects your organization.</p>
   </section>
 
+  <section class="content" id="partners">
+    <h2>Companies we work with</h2>
+    <!--
+      PARTNER LOGO TEMPLATE
+      To add or update a partner logo:
+        1. Drop the logo file into assets/logos/ (SVG preferred, PNG works too).
+        2. Copy one .partner-badge block below, point src at your file, and
+           set alt text to the company's full name.
+      Logos display in grayscale and turn full color on hover automatically.
+    -->
+    <div class="partners-row">
+      <div class="partner-badge">
+        <img src="assets/logos/sdo-logo.svg" alt="Secret Double Octopus (SDO)" />
+      </div>
+      <!-- <div class="partner-badge">
+        <img src="assets/logos/next-partner-logo.svg" alt="Next Partner Name" />
+      </div> -->
+    </div>
+  </section>
+
   <section class="content contact" id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:hello@secureidentityconsulting.com">hello@secureidentityconsulting.com</a></p>
-    <p>Phone: (000) 000-0000</p>
+    <p>Email: <a href="mailto:Samir.k@doubleoctopus.com">Samir.k@doubleoctopus.com</a></p>
   </section>
 
   <footer>

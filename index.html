@@ -133,10 +133,20 @@
     background: var(--bg);
     text-align: center;
   }
+  .contact-info {
+    display: inline-block;
+    text-align: left;
+  }
   .contact p {
     font-size: 15px;
     color: var(--muted);
     margin: 6px 0;
+  }
+  .contact p .label {
+    display: inline-block;
+    width: 50px;
+    color: var(--text);
+    font-weight: 600;
   }
   .contact a { color: var(--navy); text-decoration: none; }
 
@@ -265,8 +275,10 @@
 
   <section class="content contact" id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:skirouani@secureidentity.ltd">skirouani@secureidentity.ltd</a></p>
-    <p>Tel: <a href="tel:+447951747446">+44 7951 747446</a></p>
+    <div class="contact-info">
+      <p><span class="label">Email:</span> <a href="mailto:skirouani@secureidentity.ltd">skirouani@secureidentity.ltd</a></p>
+      <p><span class="label">Tel:</span> <a href="tel:+447951747446">+44 7951 747446</a></p>
+    </div>
   </section>
 
   <footer>
